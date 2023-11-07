@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+.rectangle {
+    width: 1020px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: calc((100% - 1020px) / 2);
+    font-size: 0;
+}
+
+.start, .x, .end {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+}
+
+.start {
+    top: -95px;
+}
+
+.x {
+    top: -125px;
+    left: calc((100% - 30px)/2);
+    background-color: initial;
+    font-weight: bold;
+}
+
+.end {
+    top: -155px;
+    left: calc(100% - 30px);
+}
+
+.rectangle-blue {
+    width: 500px;
+    height: 20px;
+    background-color: rgb(71, 135, 253);
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+
+.round {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 35px;
+    position: relative;
+    top: -25px;
+    left: calc((100% - 30px)/2);
+    z-index: 1;
+}
+
+.value {
+    display: inline-block;
+    width: 99px;
+    height: 20px;
+    position: relative;
+    top: -120px;
+    left: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.strip {
+    width: 0px;
+    height: 10px;
+    border: 1px solid blue;
+    margin-left: 5px;
+}
+
+.value-end {
+    width: 10px;
+}
